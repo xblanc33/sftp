@@ -10,6 +10,5 @@ services:
 
 before_install:
   - docker build -t xblanc/sftp .
-  - docker run -d -p 2222:2222 foo:pass:::upload
+  - docker run -d -p 2222:2222 xblanc/sftp foo:pass:::upload
 
-  
