@@ -1,0 +1,15 @@
+sudo: required
+
+language: node_js
+
+node_js:
+  - "7"
+
+services:
+  - docker
+
+before_install:
+  - docker build -t xblanc/sftp .
+  - docker run -d -p 2222:2222 foo:pass:::upload
+
+  
