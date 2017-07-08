@@ -2,7 +2,7 @@ var assert = require('assert');
 const SftpClient = require('sftp-promises');
 
 function createSFTPClient() {
-    return = new SftpClient({
+    return new SftpClient({
         host: 'localhost',
         port: '2222',
         username: 'foo',
