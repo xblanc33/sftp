@@ -3,7 +3,7 @@ const SftpClient = require('sftp-promises');
 
 function createSFTPClient() {
     return new SftpClient({
-        host: 'localhost',
+        host: '127.0.0.1',
         port: '2222',
         username: 'foo',
         password: 'pass'
