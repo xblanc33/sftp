@@ -13,7 +13,7 @@ function createSFTPClient() {
 describe('SFTPClient test', function() {
 
     it('should accept connexion and create a directory', function() {
-        createSFTPClient.mkdir('test').then(() => {
+        createSFTPClient().mkdir('test').then(() => {
             assert.true();
             done();
         });
